@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/JQuery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Google Maps API -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Personalized Stylesheet -->
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Portfolio Page - PROJECTS</title>
+</head>
+
+<body class="body">
+
+	<!-- Header Bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader">
+		<div class="container-fluid">
+			<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Scott T. Wilkinson, MBA</a>
+			</div>
+
+			<!-- Menu Items -->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li class="active"><a href="aboutMe.html">About Me</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Map -->
+	<div class="container-fluid main size padding">
+	    <div class="row size">
+			<div class="col-md-12 page-main size">
+				<div class="size" id="map">
+					<script type="text/javascript">
+
+						function initMap() {
+							// Map
+							var mapOptions = {
+								zoom: 4,
+								center: new google.maps.LatLng(40.000000,-53.000000),
+								mapTypeId: google.maps.MapTypeId.ROADMAP,
+								draggable: false,
+								scrollwheel: false,
+								disableDefaultUI: true,
+								disableDoubleClickZoom: true
+							}
+							var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+				        	// Markers
+							var madrid = new google.maps.Marker({
+			          			position: new google.maps.LatLng(40.412154, -3.704301),
+			          			map: map,
+			          			title: 'Madrid'
+			        		});
+
+							var austin = new google.maps.Marker({
+			          			position: new google.maps.LatLng(30.268018, -97.743292),
+			          			map: map,
+			          			title: 'Austin'
+			        		});
+
+							var dallas = new google.maps.Marker({
+			          			position: new google.maps.LatLng(32.822586, -96.872927),
+			          			map: map,
+			          			title: 'Dallas'
+			        		});
+
+			        		var valladolid = new google.maps.Marker({
+			          			position: new google.maps.LatLng(41.668125, -4.738319),
+			          			map: map,
+			          			title: 'Valladolid'
+			        		});
+
+			        		// Resize stuff...
+							google.maps.event.addDomListener(window, "resize", function() {
+							   var center = map.getCenter();
+							   google.maps.event.trigger(map, "resize");
+							   map.setCenter(center);
+							});
+			        	}
+					</script>
+
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUgE6EWNMYPMGuGjJ3ir81AyKI0_4w9U&callback=initMap">
+	    			</script>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Center Box -->
+	<div class="container-fluid size">
+		<div class="row" id="centerRow">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6" id="centerColumn">
+				<div id="centerBox">
+					<div id="centerInlay">
+						<p>Helloada;sdfj
+						asdlk;fja;sldkfj
+						al;sdkfja;lsdkfj
+						a;lsdkjfa;lsdjfa
+						l;skdfjal;sdjf;a
+						lskjrqoiwnupqoin
+						bqpoernthbqpeotnasdlk;fja;sldkfj
+						al;sdkfja;lsdkfj
+						a;lsdkjfa;lsdjfa
+						l;skdfjal;sdjf;a
+						lskjrqoiwnupqoin
+						bqpoernthbqpeotnasdlk;fja;sldkfj
+						al;sdkfja;lsdkfj
+						a;lsdkjfa;lsdjfa
+						l;skdfjal;sdjf;a
+						lskjrqoiwnupqoin
+						bqpoernthbqpeotn
+						qpebhvem;oerh</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-bottom navbarFooter">
+		<div class="container-fluid">
+
+			<!-- Contact Me -->
+			<div class="navbar-header  navbar-right">
+				<button class="navbar-btn btn">
+					<a href="#">Contact Me</a>
+				</button>
+
+			</div>
+		</div>
+	</nav>
+
+</body>
+</html>
