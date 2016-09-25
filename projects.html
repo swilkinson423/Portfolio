@@ -6,6 +6,8 @@
 	<script type="text/javascript" src="js/JQuery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Google Maps API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUgE6EWNMYPMGuGjJ3ir81AyKI0_4w9U&callback=initMap"></script>
 	<!-- Bootstrap Theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Bootstrap Stylesheet -->
@@ -18,49 +20,47 @@
 <body class="body">
 
 	<!-- Header Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader">
+	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader navbar-custom">
 		<div class="container-fluid">
-			<!-- Logo -->
+			<!-- Logos -->
 			<div class="navbar-header">
+				<!-- Name Space -->
+				<div class="navbar-brand"><h1 id="name">Scott T. Wilkinson</h1></div>
+
+				<!-- Mobile View Open Menu -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Scott T. Wilkinson, MBA</a>
 			</div>
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li class="active"><a href="projects.html">Projects</a></li>
-					<li><a href="aboutMe.html">About Me</a></li>
+					<li><a href="index.html"><h2 class="menuItem">Home</h2></a></li>
+					<li><a href="projects.html"><h2 class="menuItem">Projects</h2></a></li>
+					<li><a href="aboutMe.html"><h2 class="menuItem">About Me</h2></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Main -->
-	<div class="container main padding">
-	    <!-- Middle Image -->
-	    <div class="row">
-		    <div class="col-md-12">
-		      	<img class="img-responsive" src="./img/mainImage.jpg">
-		    </div>
-	    </div>
+	<div class="container-fluid main padding">
+
 	    <!-- Featured Work Title -->
 	    <div class="row">
 		    <div class="col-md-12">
 		      	<h2>Projects</h2>
 		    </div>
 	    </div>
-	    <!-- Featured Work-->
-	    <div class="row row-centered">
 
+	    <!-- Featured Work-->
+	    <div class="row">
 	    	<!-- Project 1 -->
-	      	<div class="col-md-6 col-centered">
-	        	<img class="img-responsive" src="http://www.placekitten.com/555/300" data-toggle="modal" data-target="#project1">
+	      	<div class="col-md-4 centered">
+	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project1">
 	        	<h3>Project 1</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
 		      	<!-- Modal -->
@@ -84,8 +84,8 @@
 	    	</div>
 
 	      	<!-- Project 2 -->
-	      	<div class="col-md-6 col-centered">
-	        	<img class="img-responsive" src="http://www.placekitten.com/555/300" data-toggle="modal" data-target="#project2">
+	      	<div class="col-md-4 centered">
+	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project2">
 	        	<h3>Project 2</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
 		      	<!-- Modal -->
@@ -109,8 +109,8 @@
 	        </div>
 
 	    	<!-- Project 3 -->
-	      	<div class="col-md-6 col-centered">
-	        	<img class="img-responsive" src="http://www.placekitten.com/555/300" data-toggle="modal" data-target="#project3">
+	      	<div class="col-md-4 centered">
+	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project3">
 	        	<h3>Project 3</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
 		      	<!-- Modal -->
@@ -134,12 +134,62 @@
 	    	</div>
 
 	    	<!-- Project 4 -->
-	    	<div class="col-md-6 col-centered">
-	      		<img class="img-responsive" src="http://www.placekitten.com/555/300" data-toggle="modal" data-target="#project4">
+	    	<div class="col-md-4 centered">
+	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project4">
 	        	<h3>Project 4</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
 		      	<!-- Modal -->
 	    		<div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	       			<div class="modal-dialog">
+	            		<div class="modal-content">
+	                		<div class="modal-header">
+	                    		<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+	                		</div>
+	                		<div class="modal-body">
+	                    		<img class="img-responsive" src="./img/555x300">
+	                    		INSERT TEXT HERE
+	                		</div>
+                			<div class="modal-footer">
+                    			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<hr>
+    		</div>
+
+    		<!-- Project 5 -->
+	    	<div class="col-md-4 centered">
+	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project5">
+	        	<h3>Project 5</h3>
+	        	<p><a href="http://github.com/">Link to project</a></p>
+		      	<!-- Modal -->
+	    		<div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	       			<div class="modal-dialog">
+	            		<div class="modal-content">
+	                		<div class="modal-header">
+	                    		<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+	                		</div>
+	                		<div class="modal-body">
+	                    		<img class="img-responsive" src="./img/555x300">
+	                    		INSERT TEXT HERE
+	                		</div>
+                			<div class="modal-footer">
+                    			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<hr>
+    		</div>
+
+    		<!-- Project 6 -->
+	    	<div class="col-md-4 centered">
+	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project6">
+	        	<h3>Project 6</h3>
+	        	<p><a href="http://github.com/">Link to project</a></p>
+		      	<!-- Modal -->
+	    		<div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	       			<div class="modal-dialog">
 	            		<div class="modal-content">
 	                		<div class="modal-header">
