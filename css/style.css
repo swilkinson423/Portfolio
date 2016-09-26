@@ -14,7 +14,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	background-color: #cccccc;
+	background-color: #FFF;
 	background: url(../img/indexImage.png);
 }
 
@@ -71,20 +71,29 @@ body {
 
 /* Projects Styles */
 #projectBox {
-	margin: -20px 25px 0px 25px;
-	padding: 20px;
+	margin: -20px auto;
 	height: 100%;
-	background-color: #FFF;
+	width: auto;
+	background-color: lightgrey;
+	text-align: center;
 }
 
 .centered {
-    text-align: center;
     margin: auto;
     padding: auto;
 }
 
+.projectWrap {
+	margin:20px;
+	padding: 20px;
+	background-color: darkgrey;
+	border-radius: 5px;
+}
+
 .projectItem {
-	padding: 20px 10px 0px 10px;
+	text-align: center;
+	margin: 0 auto;
+	padding: auto;
 }
 
 /* About Me Styles */
@@ -110,15 +119,18 @@ body {
 	border-radius: 25px;
 	margin: 10% 0px 0px 0px;
 	padding: 5px 5px 55px 5px;
+	background: url(../img/indexImage.png);
+	border-style: outset;
 }
 
 #centerInlay {
-	background-color: #a3a3c2;
+	background-color: lightgrey;
 	z-index: 3;
 	height: 100%;
 	width: 100%;
 	border-radius: 20px;
 	padding: 15px;
+	border-style: inset;
 }
 
 /* Footer Styles */
