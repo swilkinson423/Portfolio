@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">.
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/JQuery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
@@ -17,49 +19,40 @@
 	<title>Portfolio Page - PROJECTS</title>
 </head>
 
-<body class="body">
+<body>
 
 	<!-- Header Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader navbar-custom">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Logos -->
 			<div class="navbar-header">
-				<!-- Name Space -->
-				<div class="navbar-brand"><h1 id="name">Scott T. Wilkinson</h1></div>
-
 				<!-- Mobile View Open Menu -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<!-- Name Space -->
+				<a href="#" class="navbar-brand">Scott T. Wilkinson</a>
 			</div>
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h2 class="menuItem">Home</h2></a></li>
-					<li><a href="projects.html"><h2 class="menuItem">Projects</h2></a></li>
-					<li><a href="aboutMe.html"><h2 class="menuItem">About Me</h2></a></li>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="projects.html">Projects</a></li>
+					<li><a href="aboutMe.html">About Me</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Main -->
-	<div class="container-fluid main padding">
-
-	    <!-- Featured Work Title -->
-	    <div class="row">
-		    <div class="col-md-12">
-		      	<h2>Projects</h2>
-		    </div>
-	    </div>
-
+	<div class="container-fluid main backgroundSize padding">
 	    <!-- Featured Work-->
-	    <div class="row">
+	    <div class="row insetBorder hidden-xs" id="projectBox">
 	    	<!-- Project 1 -->
-	      	<div class="col-md-4 centered">
+	      	<div class="col-xs-12 col-md-4 centered projectItem">
 	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project1">
 	        	<h3>Project 1</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -80,11 +73,10 @@
             			</div>
         			</div>
     			</div>
-	    		<hr>
 	    	</div>
 
 	      	<!-- Project 2 -->
-	      	<div class="col-md-4 centered">
+	      	<div class="col-xs-12 col-md-4 centered projectItem">
 	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project2">
 	        	<h3>Project 2</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -105,11 +97,10 @@
 	            		</div>
 	        		</div>
 	        	</div>
-	        	<hr>
 	        </div>
 
 	    	<!-- Project 3 -->
-	      	<div class="col-md-4 centered">
+	      	<div class="col-xs-12 col-md-4 centered projectItem">
 	        	<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project3">
 	        	<h3>Project 3</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -130,11 +121,10 @@
             			</div>
         			</div>
     			</div>
-    			<hr>
 	    	</div>
 
 	    	<!-- Project 4 -->
-	    	<div class="col-md-4 centered">
+	    	<div class="col-xs-12 col-md-4 centered projectItem">
 	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project4">
 	        	<h3>Project 4</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -155,11 +145,10 @@
             			</div>
         			</div>
     			</div>
-    			<hr>
     		</div>
 
     		<!-- Project 5 -->
-	    	<div class="col-md-4 centered">
+	    	<div class="col-xs-12 col-md-4 centered projectItem">
 	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project5">
 	        	<h3>Project 5</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -180,11 +169,10 @@
             			</div>
         			</div>
     			</div>
-    			<hr>
     		</div>
 
     		<!-- Project 6 -->
-	    	<div class="col-md-4 centered">
+	    	<div class="col-xs-12 col-md-4 centered projectItem">
 	      		<img class="img-responsive centered" src="http://www.placekitten.com/500/200" data-toggle="modal" data-target="#project6">
 	        	<h3>Project 6</h3>
 	        	<p><a href="http://github.com/">Link to project</a></p>
@@ -205,7 +193,6 @@
             			</div>
         			</div>
     			</div>
-    			<hr>
     		</div>
     	</div>
     </div>
@@ -217,7 +204,7 @@
 			<!-- Contact Me -->
 			<div class="navbar-header  navbar-right">
 				<button class="navbar-btn btn">
-					<a href="#">Contact Me</a>
+					<a href="#" id="button">Contact Me</a>
 				</button>
 
 			</div>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">.
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/JQuery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
@@ -17,40 +19,39 @@
 	<title>Portfolio Page - PROJECTS</title>
 </head>
 
-<body class="body">
+<body>
 
 	<!-- Header Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader navbar-custom">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Logos -->
 			<div class="navbar-header">
-				<!-- Name Space -->
-				<div class="navbar-brand"><h1 id="name">Scott T. Wilkinson</h1></div>
-
 				<!-- Mobile View Open Menu -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<!-- Name Space -->
+				<a href="#" class="navbar-brand">Scott T. Wilkinson</a>
 			</div>
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h2 class="menuItem">Home</h2></a></li>
-					<li><a href="projects.html"><h2 class="menuItem">Projects</h2></a></li>
-					<li><a href="aboutMe.html"><h2 class="menuItem">About Me</h2></a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li class="active"><a href="aboutMe.html">About Me</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Map -->
-	<div class="container size">
-	    <div class="row size">
+	<div class="container size backgroundSize fullStretch hidden-xs hidden-sm">
+	    <div class="row size fullStretch">
 			<div class="col-md-12 page-main size">
-				<div class="size" id="map">
+				<div class="size insetBorder" id="map">
 					<script type="text/javascript" src="js/map.js"></script>
 				</div>
 			</div>
@@ -58,9 +59,9 @@
 	</div>
 
 	<!-- Center Box -->
-	<div class="container-fluid">
-		<div class="row" id="centerRow">
-			<div class="col-md-4">
+	<div class="container hidden-xs hidden-sm">
+		<div class="row centered" id="centerRow">
+			<div class="col-md-2">
 			</div>
 			<div class="col-md-4" id="centerColumn">
 				<div id="centerBox">
@@ -86,19 +87,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-2">
 			</div>
 		</div>
 	</div>
 
 	<!-- Footer Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-bottom navbarFooter">
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container-fluid">
 
 			<!-- Contact Me -->
 			<div class="navbar-header  navbar-right">
 				<button class="navbar-btn btn">
-					<a href="#">Contact Me</a>
+					<a href="#" id="button">Contact Me</a>
 				</button>
 
 			</div>

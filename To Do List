@@ -3,13 +3,14 @@
 General:
 
 Header:
+	resize for phones
 
 Footer:
 	Twitter Feed (Latest Tweets, uses Wells & Alerts)
 
 Landing Page:
 	General Image
-	Align Flipboard to bottom
+	Fix Flipboard for phones
 
 Projects Page:
 	Update Images

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">.
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/JQuery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
@@ -17,79 +19,80 @@
 	<title>Portfolio Page - PROJECTS</title>
 </head>
 
-<body class="body">
+<body>
 
 	<!-- Header Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbarHeader navbar-custom">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Logos -->
 			<div class="navbar-header">
-				<!-- Name Space -->
-				<div class="navbar-brand"><h1 id="name">Scott T. Wilkinson</h1></div>
-
 				<!-- Mobile View Open Menu -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+				<!-- Name Space -->
+				<a href="#" class="navbar-brand">Scott T. Wilkinson</a>
 			</div>
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html"><h2 class="menuItem">Home</h2></a></li>
-					<li><a href="projects.html"><h2 class="menuItem">Projects</h2></a></li>
-					<li><a href="aboutMe.html"><h2 class="menuItem">About Me</h2></a></li>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="aboutMe.html">About Me</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Main -->
-	<div class="container main padding height">
-		<div class="row" style="height:70%;"></div>
-		<div class="row">
-
-			<!-- Spacer -->
-			<div class="col-md-2">
-			</div>
-
+	<div class="container-fluid size backgroundSize">
+		<div class="row hidden-xs size">
+			<div class="col-md-12 size">
 			<!-- Flipboard -->
-			<div class="col-md-8" id="flipboard">
-				<div class="container">
-					<div class="row">
+			<table class="size">
+  				<tr class="size">
+  				<td class="size">
+  				</td>
+  				</tr>
+  				<tr class="size">
+  				<td class="size">
+					<!-- Flipboard -->
+					<div class="flipboard">
 						<!-- Programming for Beginners -->
-						<div class="col-md-2">
+						<div class="flipboardCentered">
 							<a data-flip-widget="mag" href="https://flipboard.com/@scottwilkin5vlt/programming-for-beginners-cfukqfb0y">View my Flipboard Magazine.</a>
 							<script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
 						</div>
 
 						<!-- Coding -->
-						<div class="col-md-2">
+						<div class="flipboardCentered">
 							<a data-flip-widget="mag" href="https://flipboard.com/@scottwilkin5vlt/coding-t0bvbqley">View my Flipboard Magazine.</a>
 							<script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
 						</div>
 
 						<!-- Careers in Tech -->
-						<div class="col-md-2">
+						<div class="flipboardCentered">
 							<a data-flip-widget="mag" href="https://flipboard.com/@scottwilkin5vlt/careers-%26-employment-in-tech-trr8036qy">View my Flipboard Magazine.</a>
 							<script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
 						</div>
 
 						<!-- Trends in Programming -->
-						<div class="col-md-2">
-							<a data-flip-widget="mag" href="https://flipboard.com/@scottwilkin5vlt/careers-%26-employment-in-tech-trr8036qy">View my Flipboard Magazine.</a>
+						<div class="flipboardCentered">
+							<a data-flip-widget="mag" href="https://flipboard.com/@scottwilkin5vlt/trends-in-programming-02l6iiu5y">View my Flipboard Magazine.</a>
 							<script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js" type="text/javascript"></script>
 						</div>
 					</div>
-				</div>
+				</td>
+				</tr>
+				<tr class="size">
+				<td class="paddingBottom">
+				</td>
+				</tr>
+			</table>
 			</div>
-
-			<!-- Spacer -->
-			<div class="col-md-2">
-			</div>
-
 		</div>
 	</div>
 
@@ -100,12 +103,12 @@
 			<!-- Contact Me -->
 			<div class="navbar-header  navbar-right">
 				<button class="navbar-btn btn">
-					<a href="#">Contact Me</a>
+					<a href="#" id="button">Contact Me</a>
 				</button>
 
 			</div>
 		</div>
 	</nav>
-
 </body>
+
 </html>
