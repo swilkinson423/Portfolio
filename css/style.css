@@ -21,6 +21,7 @@ body {
 /* Header Styles */
 
 
+
 /* Main Styles */
 .size {
 	height: 100%;
@@ -28,12 +29,16 @@ body {
 }
 
 .fullStretch {
-	padding: 0px;
 	padding: 40px 20px 5px 20px;
 }
 
 .insetBorder {
 	border-style: inset;
+	border-width: 7px;
+}
+
+.outsetBorder {
+	border-style: outset;
 	border-width: 5px 5px 10px 5px;
 }
 
@@ -50,10 +55,9 @@ body {
 /* Index Styles */
 .flipboard {
 	background-color: grey;
-	border-radius: 20px;
 	padding: auto;
 	margin: auto;
-	height: 220px;
+	height: 250px;
 	width: 800px;
 }
 
@@ -71,22 +75,24 @@ body {
 
 /* Projects Styles */
 #projectBox {
-	margin: -20px auto;
+	margin: -20px 20px 40px 20px;
 	height: 100%;
 	width: auto;
-	background-color: lightgrey;
+	background-color: grey;
 	text-align: center;
+	overflow-y:scroll;
+	overflow-x: hidden;
 }
 
 .centered {
-    margin: auto;
+    margin: 10px auto;
     padding: auto;
 }
 
 .projectWrap {
-	margin:20px;
-	padding: 20px;
-	background-color: darkgrey;
+	margin:30px 50px 30px 50px;
+	padding: 20px auto auto auto;
+	background-color: rgb(70,70,70);
 	border-radius: 5px;
 }
 
@@ -116,7 +122,6 @@ body {
 	z-index: 2;
 	height: 100%;
 	width: 100%;
-	border-radius: 25px;
 	margin: 10% 0px 0px 0px;
 	padding: 5px 5px 55px 5px;
 	background: url(../img/indexImage.png);
@@ -128,7 +133,6 @@ body {
 	z-index: 3;
 	height: 100%;
 	width: 100%;
-	border-radius: 20px;
 	padding: 15px;
 	border-style: inset;
 }
