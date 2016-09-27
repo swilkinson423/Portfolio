@@ -1,7 +1,7 @@
 function initMap() {
 	// Map
 	var mapOptions = {
-		zoom: 4,
+		zoom: 3,
 		center: new google.maps.LatLng(43.000000,-43.00000),
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		draggable: false,
@@ -11,12 +11,41 @@ function initMap() {
 	}
 	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
+    // Bounds for UK
+    var strictBounds = new google.maps.LatLngBounds(
+            new google.maps.LatLng(38.00000, -53.00000),
+            new google.maps.LatLng(48.00000, -33.00000)
+    );
+
+    // Listen for the dragend event
+    google.maps.event.addListener(map, 'dragend', function() {
+        if (strictBounds.contains(map.getCenter())) return;
+
+        // We're out of bounds - Move the map back within the bounds
+        var c = map.getCenter(),
+        x = c.lng(),
+        y = c.lat(),
+        maxX = strictBounds.getNorthEast().lng(),
+        maxY = strictBounds.getNorthEast().lat(),
+        minX = strictBounds.getSouthWest().lng(),
+        minY = strictBounds.getSouthWest().lat();
+
+        if (x < minX) x = minX;
+        if (x > maxX) x = maxX;
+        if (y < minY) y = minY;
+        if (y > maxY) y = maxY;
+
+        map.setCenter(new google.maps.LatLng(y, x));
+    });
+
+
 	// Resize stuff...
 	google.maps.event.addDomListener(window, "resize", function() {
 	   var center = map.getCenter();
 	   google.maps.event.trigger(map, "resize");
 	   map.setCenter(center);
 	});
+
 
 	// Markers POI
 	var madrid = new google.maps.Marker({

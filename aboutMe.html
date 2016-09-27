@@ -26,17 +26,22 @@
 	<!-- Header Bar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="header">
 		<div class="container-fluid">
+
 			<!-- Logos -->
 			<div class="navbar-header">
-				<!-- Mobile View Open Menu -->
+				<!-- Name Space -->
+				<a href="#" class="navbar-brand">Scott T. Wilkinson</a>
+				<!-- End Name Space -->
+
+				<!-- Mobile Menu Toggle -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<!-- Name Space -->
-				<a href="#" class="navbar-brand">Scott T. Wilkinson</a>
+				<!-- End Mobile Menu Toggle -->
 			</div>
+			<!-- End Logos -->
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
@@ -46,6 +51,8 @@
 					<li class="active"><a href="aboutMe.html">About Me</a></li>
 				</ul>
 			</div>
+			<!-- End Menu Items -->
+
 		</div>
 	</nav>
 	<!-- End Header Bar -->
@@ -55,19 +62,19 @@
 
 	    <!-- Padding Top -->
 	    <div class="row paddingTop">
-	    	<div class="col-md-12 paddingTop">
+	    	<div class="col-xs-12 col-md-12 paddingTop">
 	    	</div>
 	    <div>
 	    <!-- End Padding Top -->
 
 	    <!-- Map -->
-	    <div class="row titleBox">
+	    <div class="row mainBox hidden-xs">
 	    	<div class="col-md-1">
 	    	</div>
 	    	<div class="col-md-10">
 	    		<!-- Map Widget -->
-	    		<div id="mapScrollBox">
-					<div class="insetBorder" id="map">
+	    		<div class="insetBorder" id="mapScrollBox">
+					<div id="map">
 						<script type="text/javascript" src="js/map.js"></script>
 					</div>
 				</div>
@@ -78,21 +85,19 @@
 	   	</div>
     	<!-- End Map -->
 
-    	<!-- Info Box -->
-    	<!-- TODO: Fix This??
-    	<div class="row">
-    		<div class="col-md-1">
-	    	</div>
-	    	<div class="col-md-10">
-	    		<div class="insetBorder" style="background-color: grey; height:200px; width: 100%;">
-	    		</div>
-	    	</div>
-	    	<div class="col-md-1">
-	    	</div>
-    	</div>
-    	-->
-    	<!-- End Info Box -->
+    	<!-- Small Screen AboutMe -->
+    	<div class="row mainBox hidden-sm hidden-md hidden-lg" style="float:left;">
+    		<div class="col-xs-1">
+    		</div>
+    		<div class="col-xs-10 size">
+    			<div class="row insetBorder" id="aboutMeXS">
 
+    			</div>
+    		</div>
+    		<div class="col-xs-1">
+    		</div>
+    	</div>
+    	<!-- End Small Screen AboutMe -->
 
 	</div>
     <!-- End Main -->
