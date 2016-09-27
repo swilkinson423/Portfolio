@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">.
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Twitter -->
+	<script type="text/javascript" src="js/twitter.js"></script>
 	<!-- JQuery -->
 	<script type="text/javascript" src="js/JQuery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
@@ -22,7 +24,7 @@
 <body>
 
 	<!-- Header Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="header">
 		<div class="container-fluid">
 			<!-- Logos -->
 			<div class="navbar-header">
@@ -46,65 +48,78 @@
 			</div>
 		</div>
 	</nav>
+	<!-- End Header Bar -->
 
-	<!-- Map -->
-	<div class="container size backgroundSize fullStretch hidden-xs hidden-sm">
-	    <div class="row size fullStretch">
-			<div class="col-md-12 page-main size">
-				<div class="size insetBorder" id="map">
-					<script type="text/javascript" src="js/map.js"></script>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!-- Main -->
+	<div class="container-fluid size">
 
-	<!-- Center Box -->
-	<div class="container hidden-xs hidden-sm">
-		<div class="row centered" id="centerRow">
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-4" id="centerColumn">
-				<div id="centerBox">
-					<div id="centerInlay">
-						<p>Helloada;sdfj
-						asdlk;fja;sldkfj
-						al;sdkfja;lsdkfj
-						a;lsdkjfa;lsdjfa
-						l;skdfjal;sdjf;a
-						lskjrqoiwnupqoin
-						bqpoernthbqpeotnasdlk;fja;sldkfj
-						al;sdkfja;lsdkfj
-						a;lsdkjfa;lsdjfa
-						l;skdfjal;sdjf;a
-						lskjrqoiwnupqoin
-						bqpoernthbqpeotnasdlk;fja;sldkfj
-						al;sdkfja;lsdkfj
-						a;lsdkjfa;lsdjfa
-						l;skdfjal;sdjf;a
-						lskjrqoiwnupqoin
-						bqpoernthbqpeotn
-						qpebhvem;oerh</p>
+	    <!-- Padding Top -->
+	    <div class="row paddingTop">
+	    	<div class="col-md-12 paddingTop">
+	    	</div>
+	    <div>
+	    <!-- End Padding Top -->
+
+	    <!-- Map -->
+	    <div class="row titleBox">
+	    	<div class="col-md-1">
+	    	</div>
+	    	<div class="col-md-10">
+	    		<!-- Map Widget -->
+	    		<div id="mapScrollBox">
+					<div class="insetBorder" id="map">
+						<script type="text/javascript" src="js/map.js"></script>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-2">
-			</div>
-		</div>
+				<!-- End Map Widget -->
+    		</div>
+		    <div class="col-md-1">
+		   	</div>
+	   	</div>
+    	<!-- End Map -->
+
+    	<!-- Info Box -->
+    	<!-- TODO: Fix This??
+    	<div class="row">
+    		<div class="col-md-1">
+	    	</div>
+	    	<div class="col-md-10">
+	    		<div class="insetBorder" style="background-color: grey; height:200px; width: 100%;">
+	    		</div>
+	    	</div>
+	    	<div class="col-md-1">
+	    	</div>
+    	</div>
+    	-->
+    	<!-- End Info Box -->
+
+
 	</div>
+    <!-- End Main -->
 
-	<!-- Footer Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	<!-- Twitter Sidebar -->
+	<div class="container">
+		<!-- TODO: MAKE COLAPSABLE
+		<div class="col-md-2" style="position: absolute; right: -10px; top: 0px; height: 90%; margin: 50px 0px auto 0px; ">
+			<a class="twitter-timeline" href="https://twitter.com/stupidefingname/lists/portfolio-feed" width="100%" height="100%" data-chrome="nofooter noheader"></a>
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+		-->
+	</div>
+	<!-- End Twitter Sidebar -->
+
+    <!-- Footer Bar -->
+	<nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
 		<div class="container-fluid">
-
 			<!-- Contact Me -->
 			<div class="navbar-header  navbar-right">
 				<button class="navbar-btn btn">
 					<a href="#" id="button">Contact Me</a>
 				</button>
-
 			</div>
 		</div>
 	</nav>
+	<!-- End Footer Bar -->
 
 </body>
 </html>
