@@ -45,7 +45,7 @@
 
 			<!-- Menu Items -->
 			<div class="collapse navbar-collapse" id="mainNavBar">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" id="dropdown">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li class="active"><a href="aboutMe.html">About Me</a></li>
@@ -59,46 +59,42 @@
 
 	<!-- Main -->
 	<div class="container-fluid size">
-
 	    <!-- Padding Top -->
-	    <div class="row paddingTop">
-	    	<div class="col-xs-12 col-md-12 paddingTop">
-	    	</div>
-	    <div>
+	    <div class="size">
+		    <div class="row paddingTop">
+		    	<div class="col-xs-12 col-md-12 paddingTop">
+		    	</div>
+		    <div>
+	    </div>
 	    <!-- End Padding Top -->
 
 	    <!-- Map -->
 	    <div class="row mainBox hidden-xs">
-	    	<div class="col-md-1">
+	    	<div class="col-xs-0 col-md-1 hidden-xs">
 	    	</div>
-	    	<div class="col-md-10">
-	    		<!-- Map Widget -->
+	    	<!-- Map Widget -->
+	    	<div class="col-xs-12 col-md-10 size">
 	    		<div class="insetBorder" id="mapScrollBox">
 					<div id="map">
 						<script type="text/javascript" src="js/map.js"></script>
 					</div>
 				</div>
-				<!-- End Map Widget -->
     		</div>
-		    <div class="col-md-1">
+    		<!-- End Map Widget -->
+		    <div class="col-xs-0 col-md-1 hidden-xs">
 		   	</div>
 	   	</div>
     	<!-- End Map -->
 
     	<!-- Small Screen AboutMe -->
-    	<div class="row mainBox hidden-sm hidden-md hidden-lg" style="float:left;">
-    		<div class="col-xs-1">
-    		</div>
-    		<div class="col-xs-10 size">
-    			<div class="row insetBorder" id="aboutMeXS">
+    	<div class="row mainBox size hidden-sm hidden-md hidden-lg">
+    		<div class="col-xs-12 size">
+    			<div class="row insetBorder size" id="aboutMeXS">
 
     			</div>
     		</div>
-    		<div class="col-xs-1">
-    		</div>
     	</div>
     	<!-- End Small Screen AboutMe -->
-
 	</div>
     <!-- End Main -->
 
