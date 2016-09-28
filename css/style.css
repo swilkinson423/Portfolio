@@ -17,9 +17,14 @@ body {
 	background: url(../img/indexImage.png);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Header Styles */
 #header {
-	height: 50px;
+	height: 5%;
+	margin-bottom: 0;
 }
 
 #navButton {
@@ -31,97 +36,90 @@ body {
 }
 
 /* Main Styles */
-.row {
-	margin: 0;
-}
-
 .size {
 	height: 100%;
+	width: 100%;
 	padding: 0;
+	margin: 0;
 }
 
 .paddingTop {
-	height: 80px;
+	height: 10%;
 	margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .paddingTop {
+        height: 60px;
+    }
 }
 
 @media screen and (max-height: 500px) {
     .paddingTop {
-        height: 50px;
+        height: 60px;
     }
 }
 
 .mainBox {
-	height:500px;
+	height:90%;
 	width: 100%;
-	margin: 0;
+	margin: auto;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-width: 500px) {
     .mainBox {
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .mainBox {
-        height: 300px;
+        width: 90%;
     }
 }
 
 @media screen and (max-height: 500px) {
     .mainBox {
-        height: 80%;
+        width: 90%;
     }
+}
+.colHeight {
+	height: 90%;
+	padding: 0;
 }
 
 @media screen and (max-width: 500px) {
-    .mainBox {
-        height: 80%;
+    .colHeight {
+        height: 95%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .colHeight {
+        height: 85%;
     }
 }
 
 .insetBorder {
 	border-style: inset;
-	border-width: 5px;
+	border-width: 3px;
 }
 
 .outsetBorder {
 	border-style: outset;
-	border-width: 5px;
+	border-width: 3px;
 }
 
 
 /* Index Styles */
 #titleWidget {
 	background: url(../img/projectBG.jpg);
-	margin: auto;
-	height: 700px;
-
+	padding: auto;
+	margin: 0 0 0 0;
+	text-align: center;
+	height: 100%;
+	border-radius: 30px;
 }
 
-@media screen and (max-height: 800px) {
-    #titleWidget {
-        height: 600px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #titleWidget {
-        height: 600px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #titleWidget {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #titleWidget {
-        height: 90%;
-    }
+.flipboardRow {
+	position: absolute;
+	bottom: 5%;
+	margin:	auto;
+	width: 100%;
 }
 
 .flipboard {
@@ -129,51 +127,28 @@ body {
 	background-color: grey;
 	padding: auto;
 	margin: auto;
-	height: 230px;
-	width: 660px;
+	height: 250px;
+	width: 700px;
+	border-radius: 30px;
 }
 
 .flipboardCentered {
 	text-align: center;
 	width: 25%;;
-    margin: 10px auto auto auto;
+    margin: 20px auto auto auto;
     float: left;
 }
 
 /* Projects Styles */
 #projectBox {
 	background: url(../img/projectBG.jpg);
+	padding: auto;
+	margin: 0 0 0 0;
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	position: absolute;
-    left: 0;
-    top: 0;
-	height: 700px;
-}
-
-@media screen and (max-width: 800px) {
-    #projectBox {
-        height: 600px;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #projectBox {
-        height: 600px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #projectBox {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #projectBox {
-        height: 500px;
-    }
+	height: 100%;
+	border-radius: 30px;
 }
 
 .centeredImage {
@@ -181,7 +156,8 @@ body {
 }
 
 .projectWrap {
-	margin: 10px;
+	background: url(../img/metal.jpg);
+	margin: 10px 40px 10px 40px;
 	padding: 10px;
 	background-color: grey;
 	border-radius: 5px;
@@ -189,29 +165,18 @@ body {
 
 .projectItem {
 	text-align: center;
-	margin: 0 auto;
-	padding: auto;
+	margin: 10px auto;
+	padding: 0;
+	border-color: red;
 }
 
 /* About Me Styles */
 #mapScrollBox {
-	margin: auto;
-	height: 700px;
-	overflow: hidden;
-}
-
-@media screen and (max-width: 800px) {
-    #mapScrollBox {
-        height: 600px;
-        overflow: scroll;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #mapScrollBox {
-        height: 600px;
-        overflow: scroll;
-    }
+	padding: auto;
+	margin: 0 0 0 0;
+	overflow: scroll;
+	height: 100%;
+	border-radius: 30px;
 }
 
 #map {
@@ -231,77 +196,34 @@ body {
     }
 }
 
-#aboutMeXS {
+/* Contact Me Styles */
+#contactBox {
 	background: url(../img/projectBG.jpg);
-	background-color: grey;
-	position: relative;
-    left: 0;
-    top: 0;
-	margin: 0;
+	padding: auto;
+	margin: 0 0 0 0;
+	text-align: center;
+	height: 100%;
+	border-radius: 30px;
 }
 
-@media screen and (max-width: 500px) {
-    #aboutMeXS {
-        height: 500px;
-    }
+/* Twitter Styles */
+#twitter {
+	position: absolute;
+	right: 0px;
+	top: 7%;
+	height: 90%;
+	margin: 0px 0px 0px 0px;
 }
 
-@media screen and (max-height: 500px) {
-    #aboutMeXS {
-        height: 250px;
-    }
+@media screen and (max-height: 800px) {
+	#twitter {
+		right: 40px;
+	}
 }
 
-/* Footer Styles */
-#button {
-	color: #FFF;
-}
-
-#footer {
-	height: 60px;
-}
-
-@media screen and (max-width: 500px) {
-    #footer {
-        height: 40px;
-    }
-}
-
-@media screen and (max-height: 500px) {
-    #footer {
-        height: 40px;
-    }
-}
-
-.btn {
-	background: #787d80;
-	background-image: -webkit-linear-gradient(top, #aaaaaa, #000000);
-	background-image: -moz-linear-gradient(top, #aaaaaa, #000);
-	background-image: -ms-linear-gradient(top, #aaaaaa, #000);
-	background-image: -o-linear-gradient(top, #787d80, #000);
-	background-image: linear-gradient(to bottom, #787d80, #000);
-	-webkit-border-radius: 10;
-	-moz-border-radius: 10;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 1px 3px #666666;
-	-moz-box-shadow: 0px 1px 3px #666666;
-	box-shadow: 0px 1px 3px #666666;
-	font-family: Arial;
-	color: #000000;
-	font-size: 15px;
-	padding: auto 30px auto 30px;
-	margin: 5px 20px 5px 20px;
-	text-decoration: none;
-}
-
-
-
-.btn:hover {
-	background: #fc3c6c;
-	background-image: -webkit-linear-gradient(top, #fc3c6c, #db1c1c);
-	background-image: -moz-linear-gradient(top, #fc3c6c, #db1c1c);
-	background-image: -ms-linear-gradient(top, #fc3c6c, #db1c1c);
-	background-image: -o-linear-gradient(top, #fc3c6c, #db1c1c);
-	background-image: linear-gradient(to bottom, #fc3c6c, #db1c1c);
-	text-decoration: none;
+#twitterButton {
+	height: 50px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
 }

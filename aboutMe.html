@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Personalized Stylesheet -->
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Portfolio Page - PROJECTS</title>
+	<title>Portfolio Page - ABOUT ME</title>
 </head>
 
 <body>
@@ -40,6 +40,11 @@
 					<span class="icon-bar"></span>
 				</button>
 				<!-- End Mobile Menu Toggle -->
+
+				<!-- Twitter Toggle -->
+				<img class="hidden-xs" src="img/twitterButton.png" data-toggle="collapse" data-target="#twitter" id="twitterButton">
+				<!-- End Twitter Toggle -->
+
 			</div>
 			<!-- End Logos -->
 
@@ -49,6 +54,7 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html">Projects</a></li>
 					<li class="active"><a href="aboutMe.html">About Me</a></li>
+					<li><a href="contactMe.html">Contact Me</a></li>
 				</ul>
 			</div>
 			<!-- End Menu Items -->
@@ -59,68 +65,48 @@
 
 	<!-- Main -->
 	<div class="container-fluid size">
-	    <!-- Padding Top -->
-	    <div class="size">
-		    <div class="row paddingTop">
+		<!-- Top Padding -->
+		<div class="size">
+		    <div class="row size">
 		    	<div class="col-xs-12 col-md-12 paddingTop">
 		    	</div>
 		    <div>
 	    </div>
-	    <!-- End Padding Top -->
-
-	    <!-- Map -->
-	    <div class="row mainBox hidden-xs">
+		<!-- End Top Padding -->
+	    <!-- Main Box -->
+	    <div class="row mainBox">
 	    	<div class="col-xs-0 col-md-1 hidden-xs">
 	    	</div>
-	    	<!-- Map Widget -->
-	    	<div class="col-xs-12 col-md-10 size">
-	    		<div class="insetBorder" id="mapScrollBox">
+			<div class="col-xs-12 col-md-10 colHeight">
+			<!-- WIDGET -->
+
+	    		<!-- Map Widget -->
+	    		<div class="row insetBorder" id="mapScrollBox">
 					<div id="map">
 						<script type="text/javascript" src="js/map.js"></script>
 					</div>
 				</div>
+				<!-- End Map Widget -->
+
+
+    		<!-- END WIDGET -->
     		</div>
-    		<!-- End Map Widget -->
 		    <div class="col-xs-0 col-md-1 hidden-xs">
 		   	</div>
 	   	</div>
-    	<!-- End Map -->
-
-    	<!-- Small Screen AboutMe -->
-    	<div class="row mainBox size hidden-sm hidden-md hidden-lg">
-    		<div class="col-xs-12 size">
-    			<div class="row insetBorder size" id="aboutMeXS">
-
-    			</div>
-    		</div>
-    	</div>
-    	<!-- End Small Screen AboutMe -->
+	   	<!-- End Main Box -->
 	</div>
     <!-- End Main -->
 
 	<!-- Twitter Sidebar -->
 	<div class="container">
-		<!-- TODO: MAKE COLAPSABLE
-		<div class="col-md-2" style="position: absolute; right: -10px; top: 0px; height: 90%; margin: 50px 0px auto 0px; ">
+
+		<div class="col-md-2 collapse" id="twitter">
 			<a class="twitter-timeline" href="https://twitter.com/stupidefingname/lists/portfolio-feed" width="100%" height="100%" data-chrome="nofooter noheader"></a>
 			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
-		-->
 	</div>
 	<!-- End Twitter Sidebar -->
-
-    <!-- Footer Bar -->
-	<nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
-		<div class="container-fluid">
-			<!-- Contact Me -->
-			<div class="navbar-header  navbar-right">
-				<button class="navbar-btn btn">
-					<a href="#" id="button">Contact Me</a>
-				</button>
-			</div>
-		</div>
-	</nav>
-	<!-- End Footer Bar -->
 
 </body>
 </html>
