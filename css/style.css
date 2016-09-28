@@ -215,11 +215,21 @@ body {
 	margin: 0px 0px 0px 0px;
 }
 
-@media screen and (max-height: 800px) {
-	#twitter {
-		right: 40px;
-	}
+#twitterBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 50% 5% 0px 5%;
+	width: 90%;
+	height: 60%;
+	text-align: center;
 }
+
+#twitterPhone {
+	width:	100%;
+	height: 100%;
+}
+
 
 #twitterButton {
 	height: 50px;
