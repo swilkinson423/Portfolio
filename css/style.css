@@ -17,10 +17,6 @@ body {
 	background: url(../img/indexImage.png);
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 /* Header Styles */
 #header {
 	height: 5%;
@@ -174,26 +170,28 @@ body {
 #mapScrollBox {
 	padding: auto;
 	margin: 0 0 0 0;
-	overflow: scroll;
+	overflow: hidden;
 	height: 100%;
+	width: 100%;
 	border-radius: 30px;
+}
+
+@media screen and (max-height: 500px) {
+    #mapScrollBox {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mapScrollBox {
+        height: 50%;
+    }
 }
 
 #map {
 	width: 100%;
 	height: 100%;
-}
-
-@media screen and (max-width: 800px) {
-    #map {
-        width: 1000px;
-    }
-}
-
-@media screen and (max-height: 800px) {
-    #map {
-        width: 1000px;
-    }
+	border-radius: 30px;
 }
 
 /* Contact Me Styles */

@@ -4,14 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<!-- Twitter -->
-	<script type="text/javascript" src="js/twitter.js"></script>
 	<!-- JQuery -->
-	<script type="text/javascript" src="js/JQuery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<!-- Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- Google Maps API -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUgE6EWNMYPMGuGjJ3ir81AyKI0_4w9U&callback=initMap"></script>
 	<!-- Bootstrap Theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Bootstrap Stylesheet -->
@@ -78,18 +74,20 @@
 	    	<div class="col-xs-0 col-md-1 hidden-xs">
 	    	</div>
 			<div class="col-xs-12 col-md-10 colHeight">
-			<!-- WIDGET -->
 
+			<!-- WIDGET -->
 	    		<!-- Map Widget -->
 	    		<div class="row insetBorder" id="mapScrollBox">
 					<div id="map">
-						<script type="text/javascript" src="js/map.js"></script>
+						<script src="js/map.js"></script>
+						<script src="js/markerclusterer.js"></script>
+						<!-- Google Maps API -->
+						<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkUgE6EWNMYPMGuGjJ3ir81AyKI0_4w9U&callback=initMap"></script>
 					</div>
 				</div>
 				<!-- End Map Widget -->
-
-
     		<!-- END WIDGET -->
+
     		</div>
 		    <div class="col-xs-0 col-md-1 hidden-xs">
 		   	</div>
@@ -99,11 +97,12 @@
     <!-- End Main -->
 
 	<!-- Twitter Sidebar -->
-	<div class="container">
-
+	<div class="row">
 		<div class="col-md-2 collapse" id="twitter">
+			<!-- Twitter -->
+			<script type="text/javascript" src="js/twitter.js"></script>
+			<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			<a class="twitter-timeline" href="https://twitter.com/stupidefingname/lists/portfolio-feed" width="100%" height="100%" data-chrome="nofooter noheader"></a>
-			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</div>
 	<!-- End Twitter Sidebar -->
